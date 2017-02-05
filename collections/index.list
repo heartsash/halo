@@ -48,6 +48,17 @@
         <div class="page-title-wrapper"><h1 class="page-title" data-content-field="title">{title}</h1></div>
         <br> <!-- this keeps the inline-blocks from collapsing -->
         <div class="page-desc" data-content-field="description">{.section description}{@}{.end}</div>
+        {.equal? @index 1}
+        <div class="sqs-block form-block sqs-block-form" data-block-type="9" id="custom-email-form-button">
+          <div class="sqs-block-content">
+            <div class="lightbox-handle-wrapper lightbox-handle-wrapper--align-center">
+              <span class="lightbox-handle sqs-system-button sqs-editable-button">
+                Get an Exclusive Invite
+              </span>
+            </div>
+          </div>
+        </div>
+        {.end}
       </div>
     {.equal? @index 1}<div class="scroll-arrow"><span>SCROLL DOWN</span></div>{.end}
     </div>
