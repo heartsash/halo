@@ -51,7 +51,7 @@
         {# Banner}
         {.section item}
           {# Item}
-          <div id="banner-wrapper">
+          <section id="banner-wrapper">
             {.main-image?}
               <div class="banner-image content-fill">
                 <img {@|image-meta} />
@@ -109,7 +109,7 @@
 
               </div>
             </div>
-          </div>
+          </section>
           {# /Item}
         {.or}
           {# List}
@@ -118,7 +118,7 @@
             {.section collection}
               {.equal? typeName "gallery"}{.or}
                 {.equal? typeName "album"}{.or}
-                  <div id="banner-wrapper">
+                  <section id="banner-wrapper">
                     {.background-source-video?}
                       <div class="banner-image content-fill">
                         {@|apply sqs-video-background.block}
@@ -138,7 +138,7 @@
                         <br> {# this keeps the inline-blocks from collapsing}
                       </div>
                     </div>
-                  </div>
+                  </section>
                 {.end}
               {.end}
             {.end}
