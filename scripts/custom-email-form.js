@@ -23,6 +23,7 @@ function handleFormSubmission(){
 		if (interval) clearInterval(interval);
 		$(".homepage .lightbox-inner .form-title").hide();
 		fbq('track', 'Lead');
+		pintrk('track', 'lead');
 	}
 	var errors = $('.field-error');
 	// Stop checking if form returns error
