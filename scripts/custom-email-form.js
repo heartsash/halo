@@ -1,21 +1,18 @@
 var form;
 
+// Setup homepage banner mock email form button to trigger true email form
 var customEmailFormButton = document.querySelector("#custom-email-form-button");
 if (customEmailFormButton){
 	customEmailFormButton.addEventListener("click",function(){
 		var emailForm = $("#block-yui_3_17_2_2_1486256658221_46104 > div > div > span");
 		if (emailForm) emailForm.click();
-		/*form = $(".lightbox-inner form");
-		if (form) form.submit(function () {
-			interval = window.setInterval(handleFormSubmission, 100);
-		});*/
 		// else console.log("emailForm doesn't exist");
 	});
 } // else console.log("customEmailFormButton doesn't exist");
 
-var emailFormOpenButton = $(".form-block > div > div > span");
-// console.log(emailFormOpenButton);
-emailFormOpenButton.click(function(){
+// Set new submit handler on form each time the form is opened
+// because SquareSpace resets form elements and ids when opened/closed
+$(".form-block > div > div > span").click(function(){
 	form = $(".lightbox-inner form");
 	if (form) form.submit(function () {
 		interval = window.setInterval(handleFormSubmission, 100);
@@ -24,17 +21,8 @@ emailFormOpenButton.click(function(){
 
 var eventposted=0;  
 var interval;
-var button;
 var errors;
 
-$(window).load(function(){
-	/*button = $(".lightbox-inner .button");
-	if (button) button.click(function() {*/
-	/*form = $(".lightbox-inner form");
-	if (form) form.submit(function () {
-		interval = window.setInterval(handleFormSubmission, 100);
-	});*/
-});
 function handleFormSubmission(){
 	// Track facebook lead and hide form title if submission successful
 	if(($(".form-submission-text").is(':visible')) && (eventposted==0)){
@@ -43,11 +31,6 @@ function handleFormSubmission(){
 		$(".lightbox-inner .form-title").hide();
 		fbq('track', 'Lead');
 		pintrk('track', 'lead');
-		// button = $(".lightbox-inner .button");
-		/*form = $(".lightbox-inner form");
-		if (form) form.submit(function () {
-			interval = window.setInterval(handleFormSubmission, 100);
-		});*/
 	}
 	errors = $('.field-error');
 	// Stop checking if form returns error
@@ -59,12 +42,6 @@ function handleFormSubmission(){
 		var csstxt = "display: block !important;";
 		// csstxt = $('form>.field-error').css('cssText') + "display: block !important;"
 		$('form>.field-error').css("cssText", csstxt);
-		//TODO REMOVE THIS BEFORE PUSH
-		// $(".lightbox-inner .form-title").hide();
-		// button = $(".lightbox-inner .button");
-		/*form = $(".lightbox-inner form");
-		if (form) form.submit(function () {
-			interval = window.setInterval(handleFormSubmission, 100);
-		});*/
+
 	}
 }
