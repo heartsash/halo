@@ -5,10 +5,24 @@ var customEmailFormButton = document.querySelector("#custom-email-form-button");
 if (customEmailFormButton){
 	customEmailFormButton.addEventListener("click",function(){
 		var emailForm = $("#block-yui_3_17_2_2_1486256658221_46104 > div > div > span");
-		if (emailForm) emailForm.click();
+		if (emailForm.length > 0) {
+			emailForm.click();
+		} else {
+			var emailForm2 = $("#block-yui_3_17_2_3_1489523619726_9461 > div > div > span");
+			emailForm2.click();
+		}
 		// else console.log("emailForm doesn't exist");
 	});
 } // else console.log("customEmailFormButton doesn't exist");
+
+// Remove redirect and add modal form functionality to PMF page sign up buttons
+var signUpButtons = $(".sqs-block-button-element");
+signUpButtons.removeAttr("href");
+signUpButtons.click(function(){
+	var emailForm = $("#block-yui_3_17_2_3_1489523619726_9461 > div > div > span");
+	emailForm.click();
+});
+
 
 // Set new submit handler on form each time the form is opened
 // because SquareSpace resets form elements and ids when opened/closed
