@@ -56,7 +56,11 @@
           <div class="sqs-block-content">
             <div class="lightbox-handle-wrapper lightbox-handle-wrapper--align-center">
               <span id="custom-email-form-button" class="lightbox-handle sqs-system-button sqs-editable-button">
-                Get an Exclusive Invite
+                {.if collection.homepage}  
+                  Get an Exclusive Invite  
+                {.or}  
+                  Learn more  
+                {.end}  
               </span>
             </div>
           </div>
