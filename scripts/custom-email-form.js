@@ -23,6 +23,11 @@ signUpButtons.click(function(){
 	emailForm.click();
 });
 
+//add "We respect your privacy" to email form on PMF page
+var privacyDisclaimerHtmlString = "<span style='display: block; font-family: \"futura-pt\"; font-size: 12px; margin-top: 30px;'>We respect your <a href='/privacy-policy' style='text-decoration: underline;'>privacy</a></span>";
+$("#collection-58c5b29d893fc021adf872bc .form-button-wrapper").append(privacyDisclaimerHtmlString);
+$("#collection-58c5b29d893fc021adf872bc .lightbox-content").css('padding-bottom', '10px');
+
 
 // Set new submit handler on form each time the form is opened
 // because SquareSpace resets form elements and ids when opened/closed
