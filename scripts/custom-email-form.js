@@ -35,6 +35,17 @@ if (customEmailFormButtonInvestors){
 		}
 	});
 } 
+/* Demoday page */
+var customEmailFormButtonDemoday = 
+  document.querySelector("#collection-5912789e2e69cf5fef738724 #custom-email-form-button");
+if (customEmailFormButtonDemoday){
+	customEmailFormButtonDemoday.addEventListener("click",function(){
+		var emailFormDemoday = $("#block-3c35124a49ac82eb0bf5 > div > div > span");
+		if (emailFormDemoday.length > 0){
+			emailFormDemoday.click();
+		}
+	});
+}
 
 
 /* Remove redirect and add modal form functionality to PMF page sign up buttons */
@@ -53,12 +64,22 @@ investorSignUpButtons.click(function(){
 	emailForm.click();
 });
 
+/* Remove redirect and add modal form functionality to Demoday page sign up buttons */
+var demodaySignUpButtons = $("#collection-5912789e2e69cf5fef738724 .sqs-block-button-element");
+demodaySignUpButtons.removeAttr("href");
+demodaySignUpButtons.click(function(){
+	var emailForm = $("#block-3c35124a49ac82eb0bf5 > div > div > span");
+	emailForm.click();
+});
+
 /* Add "We respect your privacy" to email form on PMF page */
 var privacyDisclaimerHtmlString = "<span style='display: block; font-family: \"futura-pt\"; font-size: 12px; margin-top: 30px;'>We respect your <a href='/privacy-policy' style='text-decoration: underline;'>privacy</a></span>";
 /* PMF page */
 $("#collection-58c5b29d893fc021adf872bc .form-button-wrapper").append(privacyDisclaimerHtmlString);
 /* Investors page */
 $("#collection-58d2b4a4a5790a8c5c0c0c4c .form-button-wrapper").append(privacyDisclaimerHtmlString);
+/* Demoday page */
+$("#collection-5912789e2e69cf5fef738724 .form-button-wrapper").append(privacyDisclaimerHtmlString);
 // $("#collection-58c5b29d893fc021adf872bc .lightbox-content").css('padding-bottom', '10px');
 
 
@@ -101,3 +122,26 @@ function handleFormSubmission(){
 
 	}
 }
+
+function redirectSignUpButtons(pageId, formId){
+	var signUpButtons = $("#" + pageId + " .sqs-block-button-element");
+	signUpButtons.removeAttr("href");
+	signUpButtons.click(function(){
+		var emailForm = $("#" + formId + " > div > div > span");
+		emailForm.click();
+	});
+}
+
+function redirectCustomEmailForm(pageId, formId){
+	var customEmailFormButton = 
+	  document.querySelector("#" + pageId + " #custom-email-form-button");
+	if (customEmailFormButton){
+		customEmailFormButton.addEventListener("click",function(){
+			var emailForm = $("#" + formId + " > div > div > span");
+			if (emailForm.length > 0){
+				emailForm.click();
+			}
+		});
+	}
+}
+
