@@ -506,3 +506,63 @@ footer{
   text-transform: uppercase;
   letter-spacing: 2px !important;
 }
+// email form modal
+.lightbox-inner{
+	.form-title{
+	  	font-family: "Times New Roman", Times, serif;
+	    font-style: italic;
+	    font-size: 23px !important;
+	    text-align: center;
+	    text-transform: uppercase;
+	    &::after {
+		  content: "Exclusive Early Access Preview\A Coming September 2017";
+		  white-space: pre-wrap;
+		  display: block;
+		  font-size: 18px;
+		  color: #000000
+			}
+	}
+	.field-list{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "futura-pt";
+	}
+	.option{
+  	display: inline-block;
+    padding-right: 5vw;
+	}
+	.button {
+  font-family: didot,"Times New Roman", Times, serif !important;
+  font-size: 19px !important;
+  font-style: italic !important;
+  padding: 10px 35px !important;
+	}
+} 
+// form submit message
+.homepage{
+	.form-submission-text{
+	font-family: didot,"Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 23px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	}
+	.form-submission-text p:last-child{
+	font-family: didot,"Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+	}
+}
+// form submission errors
+.form-wrapper .field-error {
+    background: #FFF;
+  	color: #cc3b3b;
+    padding-left: 0;
+    font-weight: bold;
+}
+form > .field-error{
+  display: none !important;
+} 
