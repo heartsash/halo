@@ -16,7 +16,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Site Header", "title" : "Site Title Font", "type" : "font", "target" : "#header h1.site-title" }
 .site-title-font {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -28,6 +28,14 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 // tweak: { "category" : "Site Header", "title" : "Site Title Color", "type" : "color", "target" : "#header h1.site-title" }
 @siteTitleColor: #2b2b2b;
 
+// white background of homepage banner text
+#banner-desc-5894dc5bebbd1a11be33a914 {
+	/* Fallback for web browsers that doesn't support RGBa */
+  	background-color: rgb(255,255,255);
+	/*transparent background*/
+	background-color: rgba(255,255,255, 0.5);
+	padding: 15px;
+}
 
 
 /* NAVIGATION
@@ -35,7 +43,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Site Navigation", "title" : "Navigation Font", "type" : "font", "target" : ".main-nav ul li" }
 .nav-font {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size: 0.85em;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -75,7 +83,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Page Title & Description", "title" : "Page Title Font", "type" : "font", "loadAllVariants" : "true", "target" : ".title-desc-wrapper h1.page-title" }
 .page-title-font {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size: 39px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -87,7 +95,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak:{ "category" : "Page Title & Description", "title" : "Page Description Font", "label" : "Description Font", "type" : "font", "loadAllVariants" : "true", "target" : ".title-desc-wrapper .page-desc p" }
 .page-description-font {
-	font-family: "PT Serif", serif;
+	font-family: didot,'times new roman', times, serif;
 	font-size: 17px;
 	font-weight: 400;
 	text-transform: none;
@@ -121,7 +129,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak:{ "category" : "Page Title & Description", "title" : "Description Bold Font", "type" : "font", "loadAllVariants" : "true", "showOnlyWhenPresent" : ".extra-description-formatting .page-desc p > strong", "target" : ".title-desc-wrapper .page-desc p > strong" }
 .desc-bold-font {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size: 36px;
 	text-transform: none;
 	letter-spacing: 1px;
@@ -135,7 +143,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak:{ "category" : "Page Title & Description", "title" : "Description Button Font", "type" : "font", "loadAllVariants" : "false", "showOnlyWhenPresent" : ".extra-description-formatting .page-desc p:last-child > a", "target" : ".title-desc-wrapper .page-desc p:last-child > a" }
 .desc-button-font {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: none;
@@ -211,7 +219,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Main Content", "title" : "Heading 3 Font", "type" : "font", "target" : ".sqs-block h3, .menu-item-title" }
 .h3-font {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'futura-pt', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -226,7 +234,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Main Content", "title" : "Text Font", "type" : "font", "loadAllVariants" : "true", "target": ".sqs-block" }
 .text-font {
-	font-family: "PT Serif", Georgia, serif;
+	font-family: didot,"Times New Roman", Times, serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -250,7 +258,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Main Content", "title" : "Meta Info Font", "type" : "font", "loadAllVariants" : "true", "target" : ".entry-header, .entry-footer", "showOnlyWhenPresent" : ".entry-header, .entry-footer" }
 .meta-font {
-	font-family: "PT Serif", Georgia, serif;
+	font-family: didot,"Times New Roman", Times, serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 0.95em;
@@ -263,7 +271,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Main Content", "title" : "Quote Block Font", "type" : "font", "target" : ".quote-block blockquote" }
 .quote-font {
-	font-family: "PT Serif", Georgia, serif;
+	font-family: didot,"Times New Roman", Times, serif;
 	font-size: 1.4em;
 	line-height: 1.6em;
 	font-weight: 400;
@@ -280,7 +288,7 @@ src: url('//static1.squarespace.com/static/570f0c5d27d4bd269ae0f41c/t/58fc4eb01b
 
 // tweak: { "category" : "Summary Block", "title" : "Summary Block Title Font", "type" : "font", "target" : ".summary-header-text, .summary-title", "showOnlyWhenPresent" : ".summary-title, .summary-title-link" }
 .summary-heading-font {
-	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -479,4 +487,22 @@ footer{
 // tweak: { "type" : "checkbox", "title" : "Show Category Navigation", "active" : "false", "target" : ".collection-type-products .main-content-wrapper", "showOnlyWhenPresent" : ".collection-type-products", "category" : "Products" }
 
 
+/* EMAIL POP-UP
+---------------------------------------------------*/
 
+// hidden email form button
+#block-yui_3_17_2_2_1486256658221_46104,
+#block-yui_3_17_2_3_1489523619726_9461,
+#block-39358caf2ef767205d99,
+#block-3c35124a49ac82eb0bf5{
+	display: none;
+}
+
+// email form button on all pages
+.sqs-block-form .sqs-system-button{
+  font-family: didot,"Times New Roman", Times, serif !important;
+  font-style: italic !important;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
+}
