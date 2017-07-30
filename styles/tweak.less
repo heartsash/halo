@@ -565,4 +565,103 @@ footer{
 }
 form > .field-error{
   display: none !important;
-} 
+}
+
+/* SPECIFIC PAGE STYLES
+---------------------------------------------------*/
+// PMF homepage, Investors page, and Demoday page
+#collection-58d2b4a4a5790a8c5c0c0c4c, 
+#collection-58c5b29d893fc021adf872bc, 
+#collection-5912789e2e69cf5fef738724{
+	.title-desc-wrapper .page-desc p{
+		&:first-child span{
+		font-family: "futura-pt";
+	  font-size: 19px !important;
+	  font-weight: 400;
+	  letter-spacing: 3.74px;
+	  line-height: 1.6em;
+		}
+		span {
+	  font-family: didot,"Times New Roman", Times, serif;
+	  font-size: 34px !important;
+	  letter-spacing: .2em;
+	  color: hsl(233,35%,20%);
+	  line-height: 1em;
+		  @media (max-width:767px){font-size: 28px !important;}
+		  @media only screen and (max-device-width: 489px) {
+			-webkit-hyphens: manual !important; 
+			-moz-hyphens: manual !important;
+			-ms-hyphens: manual !important; 
+			hyphens: manual !important;
+		  }
+		} 
+	}
+	#custom-email-form-button{
+	font-family: didot,"Times New Roman", Times, serif;
+  font-style: normal !important;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1.01px !important;
+  line-height: 1.6em;
+  color: #4d5578;
+  background-color: #f8e992;
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  padding: 20px;
+  text-decoration: underline;
+	} 
+	.first .title-desc-inner{
+	-webkit-transform: translateY(-40%);
+	-ms-transform: translateY(-40%);
+	transform: translateY(-40%);
+	@media only screen and (max-device-width: 489px){
+		-webkit-transform: translateY(-15%);
+		-ms-transform: translateY(-15%);
+		transform: translateY(-15%);
+		}
+	}
+	.lightbox-content{
+  background-color: #c7ebdc;
+	  .form-title{
+	  font-family: 'futura-pt', arial, sans-serif;
+	  font-style: normal;
+	  font-size: 28px !important;
+	  letter-spacing: 0.1em;
+	  line-height: 1.3em;
+	  text-align: center;
+	  text-transform: none;
+		  &::after{
+		  content: "Be the first to know when we launch";
+		  white-space: pre-wrap;
+		  font-size: 28px !important;
+		  letter-spacing: 0.1em;
+		  line-height: 1.3em;
+		  display: block;
+		  color: #333333;
+			}
+	 	}
+	}
+	.lightbox-inner{
+		.lightbox-content .form-wrapper .form-inner-wrapper form{
+    margin-top: 35px;
+		}
+		.field-list label.title{
+ 		display: none;
+		}
+		.button{
+	  font-family: "futura-pt" !important;
+	  font-weight: 400;
+	  font-size: 13px !important;
+	  font-style: normal !important;
+	  padding: 15px 50px !important;
+	  letter-spacing: 1.01px;
+	  text-transform: uppercase;
+	  text-decoration: underline;
+	  background-color: #20f8b5;
+	  color: #333333;
+		}
+	} 
+}
+
+ 
